@@ -12,8 +12,8 @@
 \title[IDH]{L’indice de développement humain}
 \subject{Histoire, définitions, critiques et extensions}
 \keywords{HDI}
-\author{Morgane \and Ouissem \and Olivier Cailloux}
-\institute[LAMSADE]{Économie du développement, L3}
+\author[Ouissem, Morgane, Olivier]{Ouissem Chikh \and Morgane Le Plomb \and Olivier Cailloux}
+\institute[Éco du dev, L3]{Économie du développement, L3}
 \date{\formatdate{30}{9}{2024}}
 
 \begin{document}
@@ -30,38 +30,6 @@
 \end{frame}
 \addtocounter{framenumber}{-1}
 
-\section{Context}
-\subsection{Focus}
-%NB in case of vertical spacing problems with equations within blocks, see https://tex.stackexchange.com/a/512867/.
-\begin{frame}
-	\frametitle{Title}
-	\begin{block}{Block}
-		\begin{itemize}
-			\item Item
-		\end{itemize}
-	\end{block}
-	\begin{equation}
-		\label{eq:f}
-		f(x)
-	\end{equation}
-	And a \href{http://ploum.com}{link} ? And an \url{https://example.com}?
-\end{frame}
-
-\begin{frame}[fragile]
-	\frametitle{Boucles}
-	\begin{block}{While}
-		\vspace{-0.85ex}
-		\begin{lstlisting}
-while (openGate) {
-	§…§
-}
-do {
-	§…§
-} while (openGate);
-		\end{lstlisting}	
-	\end{block}
-\end{frame}
-
 \begin{frame}
 	\frametitle{Outline}
 	\tableofcontents[hideallsubsections, sectionstyle=shaded/show]
@@ -74,13 +42,97 @@ do {
 	\end{frame}
 }
 
-\section{Second}
+\section{Histoire}
+\subsection{Avant l’IDH}
+\begin{frame}
+	\frametitle{La préhistoire de l’IDH}
+  \begin{itemize}
+    \item Marginalistes (\onslide<1->{date ?} \onslide<2->{\textasciitilde{} 187x}) : pas de comparaison d’utilité entre individus
+    \item Révolution \og{}ordinaliste\fg{}, Pareto : comparaison uniquement par Pareto-dominance
+    \item Mais souhait d’optimisation et de comparaison néanmoins !
+    \item En pratique, usage du PIB ou variantes (\onslide<1->{date ?} \onslide<3->{\textasciitilde{} 193x})
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Critiques amenant à l’IDH : le PIB}
+  \begin{block}{L’insuffisance du PIB}
+    \begin{itemize}
+      \item \emph{the welfare of a nation can scarcely be inferred from a measure of national income} {\small (Kuznets 1934, cité par \href{https://en.wikipedia.org/wiki/Simon_Kuznets\#National_income_accounts}{Wikipedia})} %Simon Kuznets, 1934. "National Income, 1929–1932". 73rd US Congress, 2d session, Senate document no. 124, page 7. https://fraser.stlouisfed.org/title/national-income-1929-1932-971
+      \item \emph{You could be well off, without being well. You could be well, without being able to lead the life you wanted.} {\small (Sen 1987a)}% The Standard of Living, Sen (1987b: 1).
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Critiques amenant à l’IDH : l’approche}
+  \begin{block}{L’étroitesse de l’approche}
+    \begin{itemize}
+      \item \emph{ attempting to maximize economic growth without paying any direct attention to the transformation of greater opulence into better living conditions (…), in general, is a roundabout, undependable, and wasteful way of improving the living standards of the poor}
+      \item \emph{with Pareto optimality as the only criterion of judgement, and self-seeking behaviour as the only basis of economic choice, the scope for saying something interesting in welfare economics became exceedingly small}
+    \end{itemize}
+    {\small (Sen 1989, 1987b, cités par Stanton)}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Théories amenant à l’IDH}
+  \begin{itemize}
+    \item Philosophie de la justice ; Rawls (1971), distribution originelle de biens primaires vue comme des moyens
+    \item Sen \& Nussbaum : capabilités, fonctionnements
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Au-delà du PIB}
+	\begin{itemize}
+		\item 1966, UNRISD (? \onslide<2->{{\tiny Institut de recherche des Nations unies pour le développement social}}), “level of living index” : nutrition, abri, santé ; éducation, loisirs, sécurité ; revenu…
+		% \item McGranahan (1972), UNRISD, “Development Index” : 9 caractéristiques économiques et 9 sociales
+		% \item 1975, United Nations Economic and Social Council, 7 indicateurs : alphabétisation, espérance de vie, énergie, part de l’industrie dans le PIB, part de l’industrie dans les exportations, emploi hors agriculture, nombre de téléphones
+		\item 1976, International Labor Organization, “basic needs” : santé, éducation, services essentiels, consommation
+		\item 1979, Physical Quality of Life Index (PQLI) : mortalité infantile, espérance de vie à un an, alphabétisation
+		\item 198x : observation que l’espérance de vie est fortement corrélée à beaucoup d’indicateurs
+		% \item 1987, 10 indicateurs
+		\item 1991, 20 indicateurs analysés, concluent que trois suffisent
+	\end{itemize}
+  Foison de propositions et d’approches…
+\end{frame}
+
+\subsection{L’IDH et son évolution}
+\begin{frame}
+	\frametitle{L’IDH}
+	\begin{itemize}
+		\item PNUD (? \onslide<2->{{\tiny Programme des Nations Unies pour le Développement}}), 1965 : éliminer la pauvreté ; développement soutenable et humain
+		\item Rapport annuel pour le PNUD, à partir de 1990
+		\item \href{https://hdr.undp.org/content/human-development-report-1990}{Premier rapport} : première définition de l’Indice de Développement Humain (IDH)
+		\item Par Mahbub ul Haq, avec consultants (dont ? \onslide<2->{Amartya Sen})
+		\item Trois sous-indicateurs : espérance de vie, éducation, PIB par habitant (log), aggrégés en un indice
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{L’évolution de l’IDH}
+	\begin{itemize}
+		\item 1991 : éducation comprend l’âge moyen de scolarisation ; changement transformation du PIB par habitant
+		\item 1994 : bornes des sous-indicateurs fixées
+		\item 1995 : éducation mesurée différemment ; changement d’une borne
+		\item 1999 : changement transformation du PIB par habitant (ln avec bornes)
+		\item 2010 : Indice de développement humain ajusté aux inégalités (IDHI), Indice de pauvreté multidimensionnelle (IPM), Indice d’inégalité de genre (IIG)
+		\item 2014 : Indice de développement de genre (IDG)
+		\item 2020 : IDH ajusté aux pressions exercées sur la planète (IDHP) %vérifié date avec rapports 2019 et 2020
+    \item Intégrer \href{https://hdr.undp.org/system/files/documents/2018humandevelopmentstatisticalupdatefr.pdf}{figure 1, Évolution des indices composés de développement humain, Bureau du Rapport sur le développement humain}
+	\end{itemize}
+\end{frame}
+
+\section{Définitions, …}
+
+\section{Limites}
 
 \begin{frame}[plain]
 	\addtocounter{framenumber}{-1}
 	\begin{center}
 		\huge
-		\textit{Thank you for your attention!}
+		\textit{Meci pour votre attention !}
 	\end{center}
 \end{frame}
 
@@ -100,10 +152,17 @@ do {
 	\frametitle{License}
 	This presentation, and the associated \LaTeX{} code, are published under the \href{https://opensource.org/licenses/MIT}{MIT license}. Feel free to reuse (parts of) the presentation, under condition that you cite the author.
 	
-	Credits are to be given to \hrefblue{https://www.lamsade.dauphine.fr/~ocailloux/}{Olivier Cailloux}, Université Paris-Dauphine.
+	Credits are to be given to the authors.
 \end{frame}
 \addtocounter{framenumber}{-1}
 \end{document}
+
+\begin{frame}
+	\frametitle{Title}
+	\begin{itemize}
+		\item Item
+	\end{itemize}
+\end{frame}
 
 \begin{frame}
 	\frametitle{Title}
